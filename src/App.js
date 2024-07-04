@@ -1,11 +1,14 @@
 import TopBar from "./layouts/TopBar";
 
-import Single from "./single/Single";
+import Register from "./register/Register";
+
+
+
 
 function App() {
   return (<>
     <TopBar/>
-   <Single/>
+   <Register/>
     
     </>
     
