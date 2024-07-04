@@ -1,10 +1,11 @@
 import TopBar from "./layouts/TopBar";
-import Home from "./pages/Home";
+
+import Single from "./single/Single";
 
 function App() {
   return (<>
     <TopBar/>
-   <Home/>
+   <Single/>
     
     </>
     
