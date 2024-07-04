@@ -1,6 +1,5 @@
 import TopBar from "./layouts/TopBar";
-
-import Register from "./register/Register";
+import Contact from "./pages/Contact";
 
 
 
@@ -8,7 +7,7 @@ import Register from "./register/Register";
 function App() {
   return (<>
     <TopBar/>
-   <Register/>
+   <Contact/>
     
     </>
     

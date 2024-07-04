@@ -15,6 +15,7 @@
           "meta[name=theme-color]"
         ]
       }
-    ]
+    ],
+    "meta-viewport": "off"
   }
 }
