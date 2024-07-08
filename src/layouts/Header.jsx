@@ -1,5 +1,5 @@
 import React from 'react'
-import './Header.css'
+import '../styles/Header.css'
 import Img from '../assets/blogIntro.jpg'
 
 export default function Header() {

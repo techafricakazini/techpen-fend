@@ -1,5 +1,5 @@
 import React from 'react'
-import './SinglePost.css'
+import '../styles/SinglePost.css'
 import SingleImg from '../assets/pic (2).jpg'
 
 export default function Singlepost() {

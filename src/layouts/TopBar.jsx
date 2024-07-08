@@ -1,5 +1,5 @@
 import React from 'react'
-import "./TopBar.css"
+import "../styles/TopBar.css"
 import blog from '../assets/blogyou.jpg'
 
 export default function TopBar() {

@@ -1,5 +1,5 @@
 import React from 'react'
-import './Home.css'
+import  '../styles/Home.css'
 import Header from '../layouts/Header'
 import Posts from '../posts/Posts'
 import Sidebar from '../sidebar/Sidebar'

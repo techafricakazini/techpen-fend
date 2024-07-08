@@ -1,5 +1,5 @@
 import React from 'react'
-import './Post.css'
+import '../styles/Post.css'
 import pict from  '../assets/pic (1).jpg'
 
 export default function Post() {

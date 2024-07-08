@@ -1,5 +1,5 @@
 import React from 'react'
-import './Write.css'
+import '../styles/Write.css'
 import wrimage from '../assets/blogIntro.jpg'
 
 export default function Write() {

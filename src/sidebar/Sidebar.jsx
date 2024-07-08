@@ -1,5 +1,5 @@
 import React from 'react'
-import './Sidebar.css'
+import '../styles/Sidebar.css'
 import profile from '../assets/blogyou.jpg'
 
 export default function Sidebar() {
