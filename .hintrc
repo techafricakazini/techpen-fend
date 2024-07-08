@@ -5,7 +5,7 @@
   "browserslist": [
     "defaults",
     "not ie 11",
-    "not ios_saf <= 12.5"
+    "not ios_saf <= 12.5"  
   ],
   "hints": {
     "compat-api/html": [
