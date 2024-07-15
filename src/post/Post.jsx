@@ -4,7 +4,7 @@ import pict from  '../assets/pic (1).jpg'
 
 export default function Post() {
   return (
-    <div className='post'>
+    <div className='post mt-5'>
         <img className='postImg' src={pict} alt=''/>
         <div className="postInfo">
             <div className="postCats">

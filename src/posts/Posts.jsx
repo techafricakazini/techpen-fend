@@ -4,7 +4,7 @@ import Post from '../post/Post'
 
 export default function Posts() {
   return (
-    <div className='posts'>
+    <div className='posts mt-5'>
       <Post/>
       <Post/>
       <Post/>

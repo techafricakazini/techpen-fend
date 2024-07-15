@@ -4,7 +4,7 @@ import SingleImg from '../assets/pic (2).jpg'
 
 export default function Singlepost() {
   return (
-    <div className='singlePost'>
+    <div className='singlePost mt-5'>
      <div className="singlePostWrapper">
       <img src={SingleImg}alt="" className="singlePostImg" />
        <h1 className="singlePosttitle">Lorem ipsum dolor sit amet consectetur.

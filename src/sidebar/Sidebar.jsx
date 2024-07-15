@@ -4,12 +4,12 @@ import profile from '../assets/blogyou.jpg'
 
 export default function Sidebar() {
   return (
-    <div className='sidebar'>
+    <div className='sidebar mt-5'>
      <div className="sidebarItem">
        <span className="sidebarTitle">ABOUT US</span>
        <img className='Img' src={profile} alt=''/>
-       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur aliquid dolorem minima culpa.</p>
-    <div className="sidebarItem">
+       <p>With Daltech & Dalty your content is primed for blast off. Don't miss your chance to join the stars - register today and fuel your blog to new heights!</p>
+    <div className="sidebarItem mt-5">
       <span className="sidebarTitle">CATEGORIES</span>
       <ul className="sidebarList">
         <li className="sidebarListItem">Life</li>

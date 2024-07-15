@@ -1,23 +1,14 @@
-import TopBar from "./layouts/TopBar";
-import Home from "./pages/Home";
-import About from "./pages/About";
-import Contact from "./pages/Contact";
-import Write from "./pages/Write";
+import BaseRouter from "./constants/Routes";
 
-/* Use this App.js to view the pages and layouts that are not included here such as login,register and posts while developing*/
-
+import "bootstrap/dist/css/bootstrap.min.css";
 
 
 
 function App() {
-  return (<>
-    <TopBar/>
-    <Home/>
-    <About/>
-   <Contact/>
-    <Write/>
+  return (
+    <>
+      <BaseRouter />
     </>
-    
   );
 }
 
