@@ -4,9 +4,9 @@ import Img from '../assets/blogIntro.jpg'
 
 export default function Header() {
   return (
-    <div className='header'>
+    <div className='header mt-5'>
      <div className="headerTitles">
-        <span className='headerTitleSm'>React & Node</span>
+        <span className='headerTitleSm'>Daltech & Dalty</span>
         <span className='headerTitleLg'>Blog</span>
      </div>
      <img className='headerImg' src={Img} alt=''/>

@@ -3,7 +3,7 @@ import '../styles/Register.css'
 
 export default function Register() {
   return (
-    <div className='register'>
+    <div className='register mt-5'>
         <span className="registerTitle">Register</span>
       <form className="registerForm">
         <label>Username</label>

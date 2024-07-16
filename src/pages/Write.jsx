@@ -4,20 +4,21 @@ import wrimage from '../assets/blogIntro.jpg'
 
 export default function Write() {
   return (
-    <div className='write'>
-        <img src={wrimage} alt="" className="writeImg" />
+    <div className='write mt-5'>
+        <img src={wrimage} alt="" className="writeImg mt-5" />
       <form className='writeForm'>
-        <div className="writeFormGroup">
+        <div className="writeFormGroup mt-5">
           <label htmlFor="fileInput">
-            <i className="writeIcon fa-solid fa-plus"></i>
+            <i className="writeIcon fa-solid fa-plus mt-5"></i>
           </label>
           <input type="file" id="fileInput" style={{display:"none"}}/>
-          <input type="text" placeholder='Title' className='writeInput' autoFocus={true}/>
+          <input type="text" placeholder='Title' className='writeInput mt-5' autoFocus={true}/>
         </div>
-        <div className="writeFormGroup">
-          <textarea placeholder='Tell your story' type="text" className='writeInput writeText'></textarea>
+        <div className="writeFormGroup mt-5">
+          <textarea placeholder='Tell your story' type="text" className='writeInput writeText text-sm '></textarea>
+       
+        <button className='writeSubmit mt-5'>Publish</button>
         </div>
-        <button className='writeSubmit'>Publish</button>
       </form>
       
     </div>

@@ -3,7 +3,7 @@ import '../styles/Login.css'
 
 export default function Login() {
   return (
-    <div className='login'>
+    <div className='login mt-5'>
         <span className="loginTitle">Login</span>
       <form className="loginForm">
         <label>Email</label>

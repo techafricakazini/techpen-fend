@@ -3,19 +3,21 @@
 }
 
 .writeImg{
-    margin-left: 150px;
-    width: 70vw;
+  
+    width: 100vw;
     height: 250px;
     border-radius: 10px;
+    object-fit: cover;
+   
    
 }
 .writeForm{
-    position: relative;
+    position: absolute;
 
 }
 
 .writeFormGroup{
-    margin-left: 150px;
+  margin: none;
     display: flex;
     align-items: center;
 }
@@ -36,8 +38,9 @@
 .writeInput{
     font-size: 30px;
     border: none;
-    padding: 20px;
-    width: 70vw;
+    resize: horizontal;
+    width: 100vw;
+  
 }
 
 .writeInput:focus{
@@ -45,14 +48,21 @@
 }
 
 .writeText{
-    font-size: 20px;
+    font-size: 13px;
     height: 100vh;
+    width: 100vw;
+    border: none;
+    padding: 20px;
+    font-family: 'Varela Round', sans-serif;
+
+    
 }
 
 .writeSubmit{
-    position: absolute;
-    top: 20px;
-    right: 50px;
+position: relative;
+    top: 200px;
+    right: 350px;
+   
     color: white;
     background-color: teal; 
     padding: 10px;

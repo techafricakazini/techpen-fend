@@ -43,7 +43,7 @@
 }
 
 .loginRegisterButton{
-    position: absolute;
+   position: relative;
     top: 60px;
     right: 20px;
     background-color: teal;
