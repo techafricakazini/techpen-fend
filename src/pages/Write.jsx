@@ -4,6 +4,7 @@ import wrimage from '../assets/blogIntro.jpg'
 
 export default function Write() {
   return (
+    
     <div className='write mt-5'>
         <img src={wrimage} alt="" className="writeImg mt-5" />
       <form className='writeForm'>

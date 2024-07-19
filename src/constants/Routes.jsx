@@ -2,6 +2,10 @@ import React, { Suspense } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { appLinks } from "./Links";
 import Navbar from "../layouts/TopBar";
+import Userprofile from "../logins/Userprofile";
+import Login from "../logins/Login";
+import ForgotPassword from "../logins/Forgotpassword";
+import ProfilePicture from "../logins/Pofilepicture";
 
 const Home = React.lazy(() => import("../pages/Home"));
 const About = React.lazy(() => import("../pages/About"));
@@ -19,6 +23,10 @@ function BaseRouter() {
             <Route path={appLinks?.About} element={<About />} />
             <Route path={appLinks?.Write} element={<Write />} />
             <Route path={appLinks?.Contact} element={<Contact />} />
+            <Route path={appLinks?.Userprofile} element={<Userprofile />} />
+            <Route path={appLinks?.Login} element={<Login />} />
+            <Route path={appLinks?.Forgotpassword} element={<ForgotPassword />} />
+            <Route path={appLinks?.Profilepicture} element={<ProfilePicture />} />
           </Routes>
         </Suspense>
       </Router>
