@@ -16,10 +16,9 @@ const ProfilePicture = () => {
     }
   };
 
-  // Function to handle form submission (if needed)
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Example: Upload profile picture to backend or update user profile
+    // Upload profile picture to backend or update user profile
     console.log('Profile picture submitted:', profilePicture);
     // Reset profilePicture state after submission (if necessary)
     // setProfilePicture(null);

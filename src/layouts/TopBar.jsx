@@ -38,14 +38,43 @@ export default function TopBar() {
             </Link>
           </li>
           <li className="nav-item">
-          <Link className="nav-link text-secondary active text-uppercase fs-3" to={appLinks?.Userprofile}>
-          <i class="bi bi-person-fill"></i>
-            </Link>
+          <div class="btn-group">
+            <Link className='nav-link text-secondary active text-uppercase fs-3'>
+            <button className="btn btn-lg dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+             <i className="bi fs-4 bi-person-fill "></i>
+             Account
+               </button>
+                  <ul className="dropdown-menu">
+                    <li>
+                      <Link className=" text-uppercase fs-4" to={appLinks?.Register}>
+                       <i className="bi bi-person-add fs-5 me-2">
+                       </i>
+                           Sign in
+                     </Link>
+                  </li>
+                  <li>
+                      <Link className=" text-uppercase fs-4" to={appLinks?.Login}>
+                       <i className="bi bi-person fs-5 me-2">
+                       </i>
+                           Log in
+                     </Link>
+                    </li> 
+                    <hr />
 
-        </li>
-        </ul>
-        </div>
-      </div>
+                    <li>
+                     <Link className=" text-uppercase fs-4" to={appLinks?.UserProfile}>
+               <i className="bi bi-gear-fill fs-5 me-2">
+                </i>
+                  Settings
+                   </Link>   
+               </li>
+            </ul>
+        </Link>
+       </div>
+      </li>
+    </ul>
+  </div>
+</div>
 
    
    
@@ -56,9 +85,37 @@ export default function TopBar() {
  <Link className="nav-link text-light" to={appLinks?.About} onClick={()=>setShowMenu(false)}>About Us</Link>
  <Link className="nav-link text-light" to={appLinks?.Write} onClick={()=>setShowMenu(false)}>Write</Link>
  <Link className="nav-link text-light" to={appLinks?.Contact} onClick={()=>setShowMenu(false)}>Contact Us</Link>  
- <Link className="nav-link text-light" to={appLinks?.Userprofile} onClick={()=>setShowMenu(false)}><i class="bi bi-person-fill"></i>
- </Link>
+ <Link className='nav-link  text-light'><button className="btn btn-lg btn-l dropdown-toggle  text-light" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+    <i className="bi bi-person-fill"></i>
+    Account
+      </button>
+        <ul className="dropdown-menu ">
+          <li>
+            <Link className=" text-uppercase fs-4" to={appLinks?.Register}>
+               <i className="bi bi-person-add fs-5 me-2">
+                </i>
+                  Sign in
+              </Link>
+             </li> 
+             <li>
+            <Link className=" text-uppercase fs-4" to={appLinks?.Login}>
+               <i className="bi bi-person fs-5 me-2">
+                </i>
+                  Login
+              </Link>
+             </li>
 
+             <hr />
+
+             <li>
+            <Link className=" text-uppercase fs-4" to={appLinks?.UserProfile}>
+               <i className=" bi bi-gear-fill fs-5 me-2">
+                </i>
+                  Settings
+              </Link>
+             </li>  
+          </ul>
+     </Link>
  </div>
   </nav>
   )

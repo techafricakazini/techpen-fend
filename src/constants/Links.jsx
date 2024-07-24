@@ -4,10 +4,12 @@ const appLinks = {
     About: "/about",
     Write: "/write",
     Contact: "/contact",
-    Userprofile: "/userprofile",
+    Register: "/Register",
     Login: "/Login",
     Forgotpassword: "/Forgotpassword",
-    Profilepicture: "/Profilepicture"
+    Profilepicture: "/Profilepicture",
+    UserProfile: "Userprofile"
+
   };
   
 
