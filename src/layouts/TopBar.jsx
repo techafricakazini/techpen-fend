@@ -54,7 +54,7 @@ export default function TopBar() {
                   </li>
                   <li>
                       <Link className=" text-uppercase fs-4" to={appLinks?.Login}>
-                       <i className="bi bi-person fs-5 me-2">
+                       <i className="bi bi-person-fill fs-5 me-2">
                        </i>
                            Log in
                      </Link>
@@ -99,7 +99,7 @@ export default function TopBar() {
              </li> 
              <li>
             <Link className=" text-uppercase fs-4" to={appLinks?.Login}>
-               <i className="bi bi-person fs-5 me-2">
+               <i className="bi bi-person-fill fs-5 me-2">
                 </i>
                   Login
               </Link>

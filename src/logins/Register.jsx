@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { appLinks } from "../constants/Links";
-import pfp from "../assets/pfp.jpeg"
 const CreateAccount = () => {
   const [fullName, setFullName] = useState('');
   const [email, setEmail] = useState('');
@@ -49,7 +48,6 @@ const CreateAccount = () => {
       </h1>
       {error && <p style={{ color: 'red' }}>{error}</p>}
       <form onSubmit={handleCreateAccount} style={{ padding: '20px', borderRadius: '40px' }}>
-        <label style={{ color:'black'}}> Profile Picture <Link to={appLinks?.Profilepicture}><img style={{width: "80px", height: "10vh"}} src={pfp} alt=''/></Link></label>
         <div style={{ marginBottom: '10px' }}>
           <label style={{ color: 'black' }}>Full Name</label>
           <input

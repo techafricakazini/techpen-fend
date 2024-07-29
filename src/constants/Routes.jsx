@@ -5,7 +5,6 @@ import Navbar from "../layouts/TopBar";
 import Register from "../logins/Register";
 import Login from "../logins/Login";
 import ForgotPassword from "../logins/Forgotpassword";
-import ProfilePicture from "../logins/Pofilepicture";
 import UserProfile from "../Userprofile/Userprofile";
 
 const Home = React.lazy(() => import("../pages/Home"));
@@ -27,7 +26,6 @@ function BaseRouter() {
             <Route path={appLinks?.Register} element={<Register />} />
             <Route path={appLinks?.Login} element={<Login />} />
             <Route path={appLinks?.Forgotpassword} element={<ForgotPassword />} />
-            <Route path={appLinks?.Profilepicture} element={<ProfilePicture />} />
             <Route path={appLinks?.UserProfile} element={<UserProfile />} />
 
           </Routes>

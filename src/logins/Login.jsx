@@ -51,7 +51,7 @@ const Login = () => {
           <h5><Link to={appLinks?.Forgotpassword}>Forgot password</Link></h5>
           <button type="submit" style={{ width: '100%', padding: '10px', boxSizing: 'border-box', borderRadius: '5px', border: 'none', color: '#17202A', cursor: 'pointer' }}>
             Login</button>
-            <h4>Don't have an account.<Link to={appLinks?.Userprofile}> Sign Up</Link></h4>
+            <h4>Don't have an account.<Link to={appLinks?.Register}> Sign Up</Link></h4>
         </form>
       </div>
     </div>

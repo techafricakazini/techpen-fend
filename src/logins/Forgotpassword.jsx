@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { appLinks } from '../constants/Links';
 
+
 const ForgotPassword = () => {
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
@@ -36,7 +37,7 @@ const ForgotPassword = () => {
   };
 
   return (
-    <div style={{ backgroundColor: '#F4F6F7', padding: '20px', maxWidth: '400px',borderRadius: '20px', margin: 'auto' }}>
+    <div style={{ backgroundColor: '#F4F6F7', padding: '20px', maxWidth: '400px', borderRadius: '20px', margin: 'auto' }}>
       <h2>Forgot Password</h2>
       {message && <p style={{ color: 'green' }}>{message}</p>}
       {error && <p style={{ color: 'red' }}>{error}</p>}
@@ -52,8 +53,8 @@ const ForgotPassword = () => {
           />
         </div>
         <button type="submit" style={{ width: '100%', padding: '10px', boxSizing: 'border-box', borderRadius: '15px', border: 'none', color: 'black', cursor: 'pointer' }}>
-            Send Reset Instructions</button>
-            <h3>Return to <Link className='font-black' to={appLinks?.Login}>Login</Link></h3>
+          Send Reset Instructions</button>
+        <h3>Return to <Link className='font-black' to={appLinks?.Login}>Login</Link></h3>
       </form>
     </div>
   );

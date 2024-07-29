@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from 'react';
+import { appLinks } from '../constants/Links';
+import { Link } from 'react-router-dom';
 
 const UserProfile = () => {
   const [profile, setProfile] = useState({
@@ -41,9 +43,9 @@ const UserProfile = () => {
   };
 
   return (
-    <div style={{backgroundColor: '#F4F6F7',padding: '20px', maxWidth: '400px',borderRadius: '20px', margin: 'auto'}} >
+    <div style={{ backgroundColor: '#F4F6F7', padding: '20px', maxWidth: '400px', borderRadius: '20px', margin: 'auto' }} >
       <h2>User Profile</h2>
-      <form onSubmit={handleSubmit}  style={{ padding: '20px', borderRadius: '40px' }}>
+      <form onSubmit={handleSubmit} style={{ padding: '20px', borderRadius: '40px' }}>
         <div>
           <label style={{ color: 'black' }}>Username:</label>
           <input
@@ -54,7 +56,7 @@ const UserProfile = () => {
             style={{ width: '100%', padding: '10px', boxSizing: 'border-box', borderRadius: '15px', border: 'none', backgroundColor: 'rgba(255, 255, 255, 0.8)', color: '#333' }}
           />
         </div>
-        
+
         <div>
           <label>Email:</label>
           <input
@@ -76,9 +78,14 @@ const UserProfile = () => {
           />
         </div>
         <br />
-        <button type="submit" style={{ width: '100%', padding: '10px', boxSizing: 'border-box', borderRadius: '15px', border: 'none',  color: 'black', cursor: 'pointer' }}>
-            Update Profile</button>
+        <button type="submit" style={{ width: '100%', padding: '10px', boxSizing: 'border-box', borderRadius: '15px', border: 'none', color: 'black', cursor: 'pointer' }}>
+          Update Profile</button>
       </form>
+      <h3>Return to
+        <button className='btn-success' style={{ padding: '10px', boxSizing: 'border-box', borderRadius: '15px', border: 'none' }}  >
+          <Link className='text-white' to={appLinks?.Login}>Login<i class="bi bi-box-arrow-in-right"></i></Link>
+        </button>
+      </h3>
     </div>
   );
 };
